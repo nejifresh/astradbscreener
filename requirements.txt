@@ -1,0 +1,9 @@
+astrapy
+openai
+langchain
+streamlit
+tiktoken
+pypdf
+python_dotenv
+sentence_transformers
+unstructured
