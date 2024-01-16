@@ -53,7 +53,7 @@ def main():
                 # display the filepath
                 st.write("**File** : " + relevant_docs[item].metadata["name"])
                 # add expander
-                with st.expander("Show me 👀"):
+                with st.expander("Display Summary 👀"):
                     summary = get_summary(relevant_docs[item])
                     st.write(summary)
             st.success('Hope I was able to save your time... Thanks')
