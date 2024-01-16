@@ -89,7 +89,6 @@ def create_docs(user_pdf_list, unique_id):
 
 def get_summary(current_doc):
     llm = ChatOpenAI()
-    # llm = HuggingFaceHub(repo_id='pszemraj/led-large-book-summary', model_kwargs={"temperature": 1e-10})
     chain = load_summarize_chain(llm=llm, chain_type="map_reduce")
     summary = chain.run([current_doc])
     return summary
